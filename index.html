@@ -30,6 +30,9 @@
 
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="assets/logo.png">
+    <!-- Cloudflare Turnstile -->
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+
 </head>
 
 <body>
@@ -412,7 +415,8 @@
 
                 <div class="contact-form-wrapper">
 
-                    <form class="contact-form">
+                    <form class="contact-form" action="https://formspree.io/f/xdegyrql" method="POST">
+
 
                         <div class="form-group">
 
@@ -482,15 +486,18 @@
                                 required></textarea>
 
                         </div>
+                        <!-- Cloudflare Turnstile verification -->
+                        <div class="cf-turnstile" data-sitekey="0x4AAAAAAGSRZhjau2yu7mn4">
+                        </div>
 
                         <!-- ENABLE AFTER CONNECTING FORM SERVICE -->
-                        <button type="submit" class="btn contact-submit" disabled>
+                        <button type="submit" class="btn contact-submit">
                             Send Message
                         </button>
 
+
                         <p class="form-notice">
-                            Message sending is not yet available.
-                            Our contact form is being prepared.
+                            Please do not include sensitive personal information.
                         </p>
 
                     </form>
@@ -541,7 +548,14 @@
                 All rights reserved.
             </p>
 
+            <div class="footer-legal">
+                <a href="privacy.html">Privacy Policy</a>
+                <span>|</span>
+                <a href="legal.html">Legal Notice</a>
+            </div>
+
         </div>
+
 
     </footer>
     <script>
@@ -571,6 +585,70 @@
             });
         });
     </script>
+    <script>
+        const contactForm = document.querySelector(".contact-form");
+        const submitButton = contactForm.querySelector(".contact-submit");
+
+        const formStatus = document.createElement("div");
+        formStatus.className = "form-status";
+        formStatus.setAttribute("role", "status");
+        contactForm.appendChild(formStatus);
+
+        contactForm.addEventListener("submit", async function (event) {
+            event.preventDefault();
+
+            if (submitButton.disabled) return;
+
+            formStatus.textContent = "";
+            formStatus.className = "form-status";
+
+            const formData = new FormData(contactForm);
+            const token = formData.get("cf-turnstile-response");
+
+            if (!token) {
+                formStatus.classList.add("error");
+                formStatus.textContent =
+                    "Security verification is not ready. Please wait and try again.";
+                return;
+            }
+
+            submitButton.disabled = true;
+            submitButton.textContent = "Sending...";
+
+            try {
+                const response = await fetch(contactForm.action, {
+                    method: "POST",
+                    body: formData,
+                    headers: {
+                        "Accept": "application/json"
+                    }
+                });
+
+                if (response.ok) {
+                    contactForm.reset();
+
+                    formStatus.classList.add("success");
+                    formStatus.textContent =
+                        "Message sent successfully! Thank you for contacting Avenfort Solutions. We will get back to you as soon as possible.";
+                } else {
+                    throw new Error("Submission failed");
+                }
+
+            } catch (error) {
+                formStatus.classList.add("error");
+                formStatus.textContent =
+                    "Something went wrong. Please try again later.";
+            } finally {
+                if (window.turnstile) {
+                    window.turnstile.reset();
+                }
+
+                submitButton.disabled = false;
+                submitButton.textContent = "Send Message";
+            }
+        });
+    </script>
+
 
 </body>
 

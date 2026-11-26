@@ -31,7 +31,9 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="assets/logo.png">
     <!-- Cloudflare Turnstile -->
-    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+    <!-- Turnstile script temporarily disabled until form reactivation. -->
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://avenfort.nl/">
 
 </head>
 
@@ -415,6 +417,11 @@
 
                 <div class="contact-form-wrapper">
 
+                    <div class="contact-form">
+                        <p>Our contact form is temporarily unavailable while we prepare for launch.</p>
+                        <p>Contact email: <strong>contact@avenfort.nl</strong></p>
+                    </div>
+                    <template id="contact-form-backup">
                     <form class="contact-form" action="https://formspree.io/f/xdegyrql" method="POST">
 
 
@@ -501,6 +508,7 @@
                         </p>
 
                     </form>
+                    </template>
 
                 </div>
 
@@ -524,6 +532,7 @@
                 <p>
                     Software & Automation Solutions
                 </p>
+                <p>contact@avenfort.nl</p>
 
             </div>
 
@@ -585,7 +594,7 @@
             });
         });
     </script>
-    <script>
+    <script type="text/plain" id="contact-script-backup">
         const contactForm = document.querySelector(".contact-form");
         const submitButton = contactForm.querySelector(".contact-submit");
 

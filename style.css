@@ -1139,3 +1139,15 @@ footer {
 .contact-submit {
     transition: opacity 0.3s ease;
 }
+
+/* DESKTOP LANGUAGE SELECTOR */
+
+@media (min-width: 1024px) {
+
+    #main-navigation .language-switch {
+        margin-left: 65px;
+        padding-left: 20px;
+        border-left: 1px solid #d1d5db;
+    }
+
+}

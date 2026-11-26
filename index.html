@@ -1,161 +1,208 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="description"
-        content="Avenfort Solutions provides professional web development, business automation and custom software solutions to help businesses improve efficiency and grow.">
+        content="Avenfort Solutions biedt professionele webontwikkeling, bedrijfsautomatisering en software op maat voor efficiëntere bedrijfsprocessen.">
 
-    <title>Avenfort Solutions | Web Development & Automation</title>
+    <title>Avenfort Solutions | Webontwikkeling & Automatisering</title>
 
     <!-- SOCIAL MEDIA PREVIEW -->
 
     <meta property="og:type" content="website">
-
-    <meta property="og:title" content="Avenfort Solutions | Web Development & Automation">
-
+    <meta property="og:title" content="Avenfort Solutions | Webontwikkeling & Automatisering">
     <meta property="og:description"
-        content="Professional web development, business automation and custom software solutions to help businesses work smarter and grow.">
-
+        content="Professionele websites, bedrijfsautomatisering en software op maat voor bedrijven die slimmer willen werken en groeien.">
     <meta property="og:url" content="https://avenfort.nl/">
-
     <meta property="og:site_name" content="Avenfort Solutions">
     <meta property="og:image" content="https://avenfort.nl/assets/social-preview.png">
-
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Avenfort Solutions - Smarter Processes. Better Business.">
+    <meta property="og:image:alt" content="Avenfort Solutions - Slimmere processen. Betere resultaten.">
+    <meta property="og:locale" content="nl_NL">
+    <meta property="og:locale:alternate" content="en_GB">
+
+    <!-- CSS AND FAVICON -->
 
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="assets/logo.png">
-    <!-- Cloudflare Turnstile -->
-    <!-- Turnstile script temporarily disabled until form reactivation. -->
-    <!-- Canonical URL -->
+
+    <!-- SEO -->
+
     <link rel="canonical" href="https://avenfort.nl/">
+
+    <link rel="alternate" hreflang="nl" href="https://avenfort.nl/">
+    <link rel="alternate" hreflang="en" href="https://avenfort.nl/en/">
+    <link rel="alternate" hreflang="x-default" href="https://avenfort.nl/">
+
+    <!-- LANGUAGE SELECTOR -->
+
+    <style>
+        #main-navigation .language-switch {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            white-space: nowrap;
+        }
+
+        #main-navigation .language-switch a {
+            font-size: 13px;
+        }
+
+        #main-navigation .language-switch [aria-current="page"] {
+            font-weight: 700;
+            text-decoration: underline;
+            text-underline-offset: 4px;
+        }
+    </style>
+
+    <!-- Turnstile temporarily disabled until form reactivation -->
 
 </head>
 
 <body>
 
     <!-- HEADER -->
+
     <header>
 
         <a href="#home" class="logo-link" aria-label="Avenfort Solutions - Home">
+
             <img src="assets/logo.png" alt="Avenfort Solutions Logo" class="logo-img">
+
         </a>
 
-        <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false"
+        <button class="menu-toggle" type="button" aria-label="Navigatiemenu openen" aria-expanded="false"
             aria-controls="main-navigation">
+
             <span></span>
             <span></span>
             <span></span>
+
         </button>
 
-        <nav id="main-navigation" aria-label="Main navigation">
+        <nav id="main-navigation" aria-label="Hoofdnavigatie">
+
             <a href="#home">Home</a>
-            <a href="#services">Services</a>
+            <a href="#services">Diensten</a>
             <a href="#software">Software</a>
-            <a href="#about">About</a>
+            <a href="#about">Over ons</a>
             <a href="#contact">Contact</a>
+
+            <span class="language-switch" aria-label="Taalkeuze">
+
+                <a href="index.html" lang="nl" hreflang="nl" aria-current="page" aria-label="Nederlands">NL</a>
+
+                <span aria-hidden="true">|</span>
+
+                <a href="en/index.html" lang="en" hreflang="en" aria-label="English">EN</a>
+
+            </span>
+
         </nav>
 
     </header>
 
-
-
     <main>
 
         <!-- HOME -->
+
         <section class="hero" id="home">
 
-            <h1>Smarter Processes. Better Business.</h1>
+            <h1>Slimmere processen. Betere resultaten.</h1>
 
             <p>
-                We develop modern websites, business automation
-                and custom software solutions that help
-                businesses work smarter and grow.
+                Wij ontwikkelen moderne websites,
+                automatiseren bedrijfsprocessen en bouwen
+                software op maat waarmee bedrijven
+                slimmer kunnen werken en groeien.
             </p>
 
             <a href="#services" class="btn">
-                Explore Our Services
+                Ontdek onze diensten
             </a>
 
         </section>
 
-
         <!-- SERVICES -->
+
         <section class="services" id="services">
 
             <div class="section-heading">
 
                 <span class="section-label">
-                    WHAT WE DO
+                    WAT WIJ DOEN
                 </span>
 
-                <h2>Our Services</h2>
+                <h2>Onze diensten</h2>
 
                 <p>
-                    Practical digital solutions to help
-                    businesses work smarter, improve efficiency
-                    and build a stronger digital presence.
+                    Praktische digitale oplossingen waarmee
+                    bedrijven efficiënter kunnen werken en
+                    hun online aanwezigheid kunnen versterken.
                 </p>
 
             </div>
 
-
             <div class="services-container">
 
                 <!-- WEB DEVELOPMENT -->
+
                 <div class="service-card">
 
                     <div class="service-icon">
                         <span>01</span>
                     </div>
 
-                    <h3>Web Development</h3>
+                    <h3>Webontwikkeling</h3>
 
                     <p>
-                        Professional, responsive websites
-                        designed to strengthen your online
-                        presence and support business growth.
+                        Professionele, gebruiksvriendelijke websites
+                        die op ieder apparaat goed werken,
+                        uw online zichtbaarheid vergroten
+                        en uw bedrijf helpen groeien.
                     </p>
 
                 </div>
 
-
                 <!-- BUSINESS AUTOMATION -->
+
                 <div class="service-card">
 
                     <div class="service-icon">
                         <span>02</span>
                     </div>
 
-                    <h3>Business Automation</h3>
+                    <h3>Bedrijfsautomatisering</h3>
 
                     <p>
-                        Reduce repetitive tasks, simplify
-                        workflows and connect business
-                        processes through automation.
+                        Verminder repetitieve taken,
+                        vereenvoudig werkprocessen en verbind
+                        bedrijfsprocessen door middel
+                        van automatisering.
                     </p>
 
                 </div>
 
-
                 <!-- CUSTOM SOFTWARE -->
+
                 <div class="service-card">
 
                     <div class="service-icon">
                         <span>03</span>
                     </div>
 
-                    <h3>Custom Software</h3>
+                    <h3>Software op maat</h3>
 
                     <p>
-                        Digital tools and applications
-                        developed around your specific
-                        operational needs and requirements.
+                        Digitale hulpmiddelen en applicaties
+                        die aansluiten op de specifieke
+                        behoeften en dagelijkse processen
+                        van uw bedrijf.
                     </p>
 
                 </div>
@@ -164,126 +211,126 @@
 
         </section>
 
-
         <!-- SOFTWARE -->
+
         <section class="software" id="software">
 
             <div class="section-heading">
 
                 <span class="section-label">
-                    OUR SOFTWARE
+                    ONZE SOFTWARE
                 </span>
 
                 <h2>Avenfort Operations</h2>
 
                 <p>
-                    A logistics management platform
-                    designed to simplify warehouse operations,
-                    improve visibility and support
-                    everyday business processes.
+                    Een logistiek managementplatform
+                    dat is ontworpen om magazijnprocessen
+                    te vereenvoudigen, inzicht te vergroten
+                    en dagelijkse werkzaamheden te ondersteunen.
                 </p>
 
                 <span class="development-badge">
-                    In Development
+                    In ontwikkeling
                 </span>
 
             </div>
 
-
             <div class="software-grid">
 
                 <!-- INVENTORY MANAGEMENT -->
+
                 <div class="software-card">
 
                     <div class="software-icon">
                         <span>01</span>
                     </div>
 
-                    <h3>Inventory Management</h3>
+                    <h3>Voorraadbeheer</h3>
 
                     <p>
-                        Organize warehouse inventory,
-                        track products and monitor
-                        stock levels in one place.
+                        Organiseer uw magazijnvoorraad,
+                        volg producten en houd
+                        voorraadniveaus bij op één plek.
                     </p>
 
                 </div>
 
-
                 <!-- ORDER MANAGEMENT -->
+
                 <div class="software-card">
 
                     <div class="software-icon">
                         <span>02</span>
                     </div>
 
-                    <h3>Order Management</h3>
+                    <h3>Orderbeheer</h3>
 
                     <p>
-                        Manage incoming and outgoing
-                        orders through a centralized
-                        workflow.
+                        Beheer inkomende en uitgaande
+                        orders vanuit één centraal
+                        werkproces.
                     </p>
 
                 </div>
 
-
                 <!-- QUALITY CONTROL -->
+
                 <div class="software-card">
 
                     <div class="software-icon">
                         <span>03</span>
                     </div>
 
-                    <h3>Quality Control</h3>
+                    <h3>Kwaliteitscontrole</h3>
 
                     <p>
-                        Record inspections,
-                        document issues and support
-                        quality control processes.
+                        Registreer inspecties,
+                        documenteer afwijkingen en ondersteun
+                        kwaliteitscontroleprocessen.
                     </p>
 
                 </div>
 
-
                 <!-- STOCK MOVEMENTS -->
+
                 <div class="software-card">
 
                     <div class="software-icon">
                         <span>04</span>
                     </div>
 
-                    <h3>Stock Movements</h3>
+                    <h3>Voorraadbewegingen</h3>
 
                     <p>
-                        Keep track of goods entering,
-                        leaving and moving between
-                        warehouse locations.
+                        Houd inkomende en uitgaande goederen
+                        bij, evenals verplaatsingen tussen
+                        verschillende magazijnlocaties.
                     </p>
 
                 </div>
 
             </div>
 
-
             <div class="software-action">
 
                 <p>
-                    Avenfort Operations is currently
-                    under development.
-                    Features and availability may change.
+                    Avenfort Operations is momenteel
+                    in ontwikkeling.
+                    Functionaliteiten en beschikbaarheid
+                    kunnen nog wijzigen.
                 </p>
 
                 <a href="#contact" class="btn">
-                    Contact Us to Learn More
+                    Neem contact op voor meer informatie
                 </a>
 
             </div>
 
         </section>
 
-
         <!-- ABOUT US -->
+
         <section class="about" id="about">
 
             <div class="about-container">
@@ -291,98 +338,104 @@
                 <div class="about-content">
 
                     <span class="section-label">
-                        ABOUT AVENFORT
+                        OVER AVENFORT
                     </span>
 
                     <h2>
-                        Technology With a Practical Purpose.
+                        Technologie die werkt voor uw bedrijf.
                     </h2>
 
                     <p>
-                        Avenfort Solutions is built around
-                        a simple idea: technology should make
-                        business operations easier, not
-                        more complicated.
+                        Avenfort Solutions is gebaseerd
+                        op een eenvoudig uitgangspunt:
+                        technologie moet bedrijfsprocessen
+                        eenvoudiger maken, niet ingewikkelder.
                     </p>
 
                     <p>
-                        Drawing on real-world experience
-                        in logistics and operational processes,
-                        our approach focuses on understanding
-                        business challenges and developing
-                        practical digital solutions.
+                        Vanuit praktijkervaring in logistiek
+                        en operationele processen richten wij
+                        ons op het begrijpen van zakelijke
+                        uitdagingen en het ontwikkelen van
+                        praktische digitale oplossingen.
                     </p>
 
                     <p>
-                        From professional websites to
-                        business automation and custom
-                        software, our goal is to create
-                        technology that supports efficiency,
-                        organization and sustainable growth.
+                        Van professionele websites tot
+                        bedrijfsautomatisering en software
+                        op maat: ons doel is technologie
+                        te ontwikkelen die efficiëntie,
+                        overzicht en duurzame groei ondersteunt.
                     </p>
 
                     <a href="#contact" class="btn">
-                        Let's Work Together
+                        Laten we samenwerken
                     </a>
 
                 </div>
 
-
                 <div class="about-highlight">
 
                     <span class="section-label">
-                        HOW WE WORK
+                        HOE WIJ WERKEN
                     </span>
 
-                    <h3>Our Approach</h3>
-
+                    <h3>Onze aanpak</h3>
 
                     <!-- UNDERSTAND -->
+
                     <div class="about-feature">
 
                         <span>01</span>
 
                         <div>
-                            <h4>Understand</h4>
+
+                            <h4>Begrijpen</h4>
 
                             <p>
-                                Listen, analyze and identify
-                                real business challenges.
+                                Luisteren, analyseren en
+                                concrete bedrijfsuitdagingen
+                                in kaart brengen.
                             </p>
+
                         </div>
 
                     </div>
 
-
                     <!-- SIMPLIFY -->
+
                     <div class="about-feature">
 
                         <span>02</span>
 
                         <div>
-                            <h4>Simplify</h4>
+
+                            <h4>Vereenvoudigen</h4>
 
                             <p>
-                                Find clear and practical
-                                digital solutions.
+                                Heldere en praktische
+                                digitale oplossingen vinden.
                             </p>
+
                         </div>
 
                     </div>
 
-
                     <!-- IMPROVE -->
+
                     <div class="about-feature">
 
                         <span>03</span>
 
                         <div>
-                            <h4>Improve</h4>
+
+                            <h4>Verbeteren</h4>
 
                             <p>
-                                Develop tools that support
-                                better business workflows.
+                                Digitale hulpmiddelen ontwikkelen
+                                die bedrijfsprocessen verbeteren.
                             </p>
+
                         </div>
 
                     </div>
@@ -393,8 +446,8 @@
 
         </section>
 
-
         <!-- CONTACT -->
+
         <section class="contact" id="contact">
 
             <div class="contact-container">
@@ -402,15 +455,15 @@
                 <div class="section-heading">
 
                     <span class="section-label">
-                        GET IN TOUCH
+                        NEEM CONTACT OP
                     </span>
 
-                    <h2>Let's Build Something Better</h2>
+                    <h2>Samen bouwen aan betere oplossingen</h2>
 
                     <p>
-                        Have a project in mind?
-                        Tell us what you're looking for
-                        and let's explore how we can help.
+                        Heeft u een project in gedachten?
+                        Vertel ons wat u nodig heeft
+                        en ontdek hoe wij u kunnen helpen.
                     </p>
 
                 </div>
@@ -418,96 +471,112 @@
                 <div class="contact-form-wrapper">
 
                     <div class="contact-form">
-                        <p>Our contact form is temporarily unavailable while we prepare for launch.</p>
-                        <p>Contact email: <strong>contact@avenfort.nl</strong></p>
-                    </div>
-                    <template id="contact-form-backup">
-                    <form class="contact-form" action="https://formspree.io/f/xdegyrql" method="POST">
 
-
-                        <div class="form-group">
-
-                            <label for="full-name">
-                                Full Name
-                            </label>
-
-                            <input type="text" id="full-name" name="name" placeholder="Your name" autocomplete="name"
-                                required>
-
-                        </div>
-
-                        <div class="form-group">
-
-                            <label for="email">
-                                Email Address
-                            </label>
-
-                            <input type="email" id="email" name="email" placeholder="you@company.com"
-                                autocomplete="email" required>
-
-                        </div>
-
-                        <div class="form-group">
-
-                            <label for="service">
-                                Service
-                            </label>
-
-                            <select id="service" name="service" required>
-
-                                <option value="" disabled selected>
-                                    Select a service
-                                </option>
-
-                                <option value="Web Development">
-                                    Web Development
-                                </option>
-
-                                <option value="Business Automation">
-                                    Business Automation
-                                </option>
-
-                                <option value="Custom Software">
-                                    Custom Software
-                                </option>
-
-                                <option value="Avenfort Operations">
-                                    Avenfort Operations
-                                </option>
-
-                                <option value="Other">
-                                    Other
-                                </option>
-
-                            </select>
-
-                        </div>
-
-                        <div class="form-group">
-
-                            <label for="message">
-                                Project Details
-                            </label>
-
-                            <textarea id="message" name="message" rows="6" placeholder="Tell us about your project..."
-                                required></textarea>
-
-                        </div>
-                        <!-- Cloudflare Turnstile verification -->
-                        <div class="cf-turnstile" data-sitekey="0x4AAAAAAGSRZhjau2yu7mn4">
-                        </div>
-
-                        <!-- ENABLE AFTER CONNECTING FORM SERVICE -->
-                        <button type="submit" class="btn contact-submit">
-                            Send Message
-                        </button>
-
-
-                        <p class="form-notice">
-                            Please do not include sensitive personal information.
+                        <p>
+                            Ons contactformulier is tijdelijk
+                            niet beschikbaar vanwege de
+                            voorbereidingen voor onze lancering.
                         </p>
 
-                    </form>
+                        <p>
+                            E-mailadres:
+                            <strong>contact@avenfort.nl</strong>
+                        </p>
+
+                    </div>
+
+                    <!-- CONTACT FORM BACKUP -->
+
+                    <template id="contact-form-backup">
+
+                        <form class="contact-form" action="https://formspree.io/f/xdegyrql" method="POST">
+
+                            <div class="form-group">
+
+                                <label for="full-name">
+                                    Volledige naam
+                                </label>
+
+                                <input type="text" id="full-name" name="name" placeholder="Uw naam" autocomplete="name"
+                                    required>
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label for="email">
+                                    E-mailadres
+                                </label>
+
+                                <input type="email" id="email" name="email" placeholder="naam@bedrijf.nl"
+                                    autocomplete="email" required>
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label for="service">
+                                    Dienst
+                                </label>
+
+                                <select id="service" name="service" required>
+
+                                    <option value="" disabled selected>
+                                        Selecteer een dienst
+                                    </option>
+
+                                    <option value="Web Development">
+                                        Webontwikkeling
+                                    </option>
+
+                                    <option value="Business Automation">
+                                        Bedrijfsautomatisering
+                                    </option>
+
+                                    <option value="Custom Software">
+                                        Software op maat
+                                    </option>
+
+                                    <option value="Avenfort Operations">
+                                        Avenfort Operations
+                                    </option>
+
+                                    <option value="Other">
+                                        Overig
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label for="message">
+                                    Projectdetails
+                                </label>
+
+                                <textarea id="message" name="message" rows="6"
+                                    placeholder="Vertel ons over uw project..." required></textarea>
+
+                            </div>
+
+                            <!-- CLOUDFLARE TURNSTILE -->
+
+                            <div class="cf-turnstile" data-sitekey="0x4AAAAAAGSRZhjau2yu7mn4">
+                            </div>
+
+                            <button type="submit" class="btn contact-submit">
+
+                                Bericht versturen
+
+                            </button>
+
+                            <p class="form-notice">
+                                Vermeld geen gevoelige persoonsgegevens.
+                            </p>
+
+                        </form>
+
                     </template>
 
                 </div>
@@ -516,11 +585,10 @@
 
         </section>
 
-
     </main>
 
-
     <!-- FOOTER -->
+
     <footer>
 
         <div class="footer-container">
@@ -530,80 +598,107 @@
                 <img src="assets/logo.png" alt="Avenfort Solutions" class="footer-logo">
 
                 <p>
-                    Software & Automation Solutions
+                    Software- en automatiseringsoplossingen
                 </p>
+
                 <p>contact@avenfort.nl</p>
 
             </div>
 
-
             <div class="footer-links">
 
                 <a href="#home">Home</a>
-                <a href="#services">Services</a>
+                <a href="#services">Diensten</a>
                 <a href="#software">Software</a>
-                <a href="#about">About</a>
+                <a href="#about">Over ons</a>
                 <a href="#contact">Contact</a>
 
             </div>
 
         </div>
 
-
         <div class="footer-bottom">
 
             <p>
                 &copy; 2026 Avenfort Solutions.
-                All rights reserved.
+                Alle rechten voorbehouden.
             </p>
 
             <div class="footer-legal">
-                <a href="privacy.html">Privacy Policy</a>
+
+                <a href="privacy.html">
+                    Privacyverklaring
+                </a>
+
                 <span>|</span>
-                <a href="legal.html">Legal Notice</a>
+
+                <a href="legal.html">
+                    Juridische informatie
+                </a>
+
             </div>
 
         </div>
 
-
     </footer>
+
+    <!-- MOBILE NAVIGATION -->
+
     <script>
-        // Select the mobile menu button and navigation
+
         const menuToggle = document.querySelector(".menu-toggle");
         const navigation = document.querySelector("#main-navigation");
 
-        // Open and close the mobile menu
         menuToggle.addEventListener("click", function () {
+
             const isOpen = navigation.classList.toggle("active");
 
             menuToggle.setAttribute("aria-expanded", isOpen);
+
             menuToggle.setAttribute(
                 "aria-label",
-                isOpen ? "Close navigation menu" : "Open navigation menu"
+                isOpen ? "Navigatiemenu sluiten" : "Navigatiemenu openen"
             );
+
         });
 
-        // Close the menu when clicking a navigation link
         const navLinks = navigation.querySelectorAll("a");
 
         navLinks.forEach(function (link) {
+
             link.addEventListener("click", function () {
+
                 navigation.classList.remove("active");
+
                 menuToggle.setAttribute("aria-expanded", "false");
-                menuToggle.setAttribute("aria-label", "Open navigation menu");
+
+                menuToggle.setAttribute(
+                    "aria-label",
+                    "Navigatiemenu openen"
+                );
+
             });
+
         });
+
     </script>
+
+    <!-- CONTACT SCRIPT BACKUP - DISABLED -->
+
     <script type="text/plain" id="contact-script-backup">
-        const contactForm = document.querySelector(".contact-form");
+
+        const contactForm = document.querySelector("form.contact-form");
         const submitButton = contactForm.querySelector(".contact-submit");
 
         const formStatus = document.createElement("div");
+
         formStatus.className = "form-status";
         formStatus.setAttribute("role", "status");
+
         contactForm.appendChild(formStatus);
 
         contactForm.addEventListener("submit", async function (event) {
+
             event.preventDefault();
 
             if (submitButton.disabled) return;
@@ -615,49 +710,68 @@
             const token = formData.get("cf-turnstile-response");
 
             if (!token) {
+
                 formStatus.classList.add("error");
+
                 formStatus.textContent =
-                    "Security verification is not ready. Please wait and try again.";
+                    "De beveiligingscontrole is nog niet gereed. Wacht even en probeer het opnieuw.";
+
                 return;
+
             }
 
             submitButton.disabled = true;
-            submitButton.textContent = "Sending...";
+            submitButton.textContent = "Versturen...";
 
             try {
+
                 const response = await fetch(contactForm.action, {
+
                     method: "POST",
                     body: formData,
+
                     headers: {
                         "Accept": "application/json"
                     }
+
                 });
 
                 if (response.ok) {
+
                     contactForm.reset();
 
                     formStatus.classList.add("success");
+
                     formStatus.textContent =
-                        "Message sent successfully! Thank you for contacting Avenfort Solutions. We will get back to you as soon as possible.";
+                        "Uw bericht is succesvol verzonden! Bedankt voor uw interesse in Avenfort Solutions. Wij nemen zo spoedig mogelijk contact met u op.";
+
                 } else {
+
                     throw new Error("Submission failed");
+
                 }
 
             } catch (error) {
+
                 formStatus.classList.add("error");
+
                 formStatus.textContent =
-                    "Something went wrong. Please try again later.";
+                    "Er is iets misgegaan. Probeer het later opnieuw.";
+
             } finally {
+
                 if (window.turnstile) {
                     window.turnstile.reset();
                 }
 
                 submitButton.disabled = false;
-                submitButton.textContent = "Send Message";
-            }
-        });
-    </script>
+                submitButton.textContent = "Bericht versturen";
 
+            }
+
+        });
+
+    </script>
 
 </body>
 
